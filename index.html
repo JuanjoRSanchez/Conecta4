@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+</head>
+<body>
+    <p>Conecta 4</p>
+    <p>Tira el jugador </p>
+    <p id="jugadorNum"></p>
+    <p id="ganador"></p>
+    <div id="pulsadores">
+        <div class="pulsador" onclick="tirada('1')">
+            <div class="casillaPulsador"></div>
+        </div>
+        <div class="pulsador" onclick="tirada('2')">
+            <div class="casillaPulsador"></div>
+        </div>
+        <div class="pulsador" onclick="tirada('3')">
+            <div class="casillaPulsador"></div>
+        </div>
+        <div class="pulsador" onclick="tirada('4')">
+            <div class="casillaPulsador"></div>
+        </div>
+        <div class="pulsador" onclick="tirada('5')">
+            <div class="casillaPulsador"></div>
+        </div>
+        <div class="pulsador" onclick="tirada('6')">
+            <div class="casillaPulsador"></div>
+        </div>
+        <div class="pulsador" onclick="tirada('7')">
+            <div class="casillaPulsador"></div>
+        </div>
+    </div>
+    <div id="tablero">
+        <div class="casilla" id="">
+            <div id="F1" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="F2" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="F3" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="F4" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="F5" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="F6" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="F7" class="circulo"></div>
+        </div>
+
+        <div class="casilla" id="">
+            <div id="E1" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="E2" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="E3" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="E4" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="E5" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="E6" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="E7" class="circulo"></div>
+        </div>
+
+        <div class="casilla" id="">
+            <div id="D1" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="D2" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="D3" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="D4" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="D5" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="D6" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="D7" class="circulo"></div>
+        </div>
+
+        <div class="casilla" id="">
+            <div id="C1" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="C2" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="C3" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="C4" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="C5" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="C6" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="C7" class="circulo"></div>
+        </div>
+
+        <div class="casilla" id="">
+            <div id="B1" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="B2" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="B3" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="B4" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="B5" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="B6" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="B7" class="circulo"></div>
+        </div>
+
+        <div class="casilla" id="">
+            <div id="A1" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="A2" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="A3" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="A4" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="A5" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="A6" class="circulo"></div>
+        </div>
+        <div class="casilla" id="">
+            <div id="A7" class="circulo"></div>
+        </div>
+    </div>
+    <div class="pie">
+        <div class="lateral1"></div>
+        <div class="lateral2"></div>   
+        <div class="recInf"></div>     
+    </div>
+
+</body>
+<script src="javascript.js"></script>
+<script src="tablero.js"></script>
+
+</html>

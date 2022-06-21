@@ -1,0 +1,174 @@
+body{
+    
+    background-color: rgb(0, 0, 0);
+    
+}
+p:first{
+    font-size:5em;
+}
+
+p{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+}
+#tablero{
+    background-color: rgb(0, 68, 156);
+    width: 750px;
+    height: 700px;
+    display: grid;
+    margin: auto;
+    text-align: center;
+    grid-template-columns: 108px 108px 108px 108px 108px 108px  108px;
+}
+#pulsadores{
+    width: 750px;
+    height: 100px;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    text-align: center;
+    grid-template-columns: 108px 108px 108px 108px 108px 108px  108px;
+    background-color: rgb(100, 51, 51);
+    border-radius: 20px;
+}
+.casillaPulsador{
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10%;
+    background-color: rgb(255, 255, 255);
+}
+.casillaPulsador:hover{
+    background-color: rgb(46, 109, 49);
+}
+.pulsador{
+    width: 100px;
+    height: 100px; 
+}
+.pulsador:hover{
+
+}
+.casilla{
+    /*border: 1px solid red;*/
+    width: 100px;
+    height: 115px; 
+}
+.circulo{
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:17%;
+}
+#columna1, #columna2, #columna3, #columna4, #columna5, #columna6, #columna7{
+    color: white;
+    margin-top: 10%;
+    font-size: 5em;
+}  
+#btn{
+  
+    width: 150px;
+    height: 50px;
+    background-color: blueviolet;
+    text-align: center;
+}
+#jugadorNum{
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100px;
+    height: 50px;
+    border: 1px solid red;
+    font-size: 2.5em;
+}
+#ganador{
+    position: absolute;
+    display: none;
+    top: 700px;
+    margin-bottom: 50px;
+    right: 34%;
+    margin: auto;
+    width: 700px;
+    height: 200px;
+    border: 1px solid red;
+    border-radius: 50px;
+    background-color: black;
+    color: azure;
+    font-size: 2.5em;
+}
+
+
+#caja{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin: auto;
+}
+#redonda{
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+    margin-bottom: auto;
+    background-color: aliceblue;
+}
+#redondaBack{
+    background-color: rgb(250, 79, 0);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70%;
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+}
+
+/*
+#redonda:hover{
+    background-color: blue;
+}
+*/
+
+
+/* Pie del tablero*/
+.pie{
+    position: relative;
+    width: 900px;
+    height: 200px;
+    background-color: rgb(0, 68, 156);
+    margin: auto;
+}
+.lateral1{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-left: 826px;
+    margin-top: -100px;
+    border-radius: 100px;
+    background-color: rgb(0, 0, 0);
+}
+.lateral2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-left: -126px;
+    margin-top: -100px;
+    border-radius: 100px;
+    background-color: rgb(3, 3, 3);
+}
+.recInf{
+    position: absolute;
+    width: 600px;
+    height: 250px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 10%;
+    margin-left: 150px;
+    border-radius: 90px 90px;
+}
