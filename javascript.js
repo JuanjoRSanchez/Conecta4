@@ -1,7 +1,9 @@
-// Array de objetos. Cada objeto representa una casilla del tablero y tiene las siguinetes propiedades.
-// Ocupado: es un booleano que sirve para saber si la casilla esta ocupada o no por una ficha.
-// Nombre: String que identifica el objeto con la etiqueta html. 
-// Jugador: number que se utiliza para asociar la casilla a u jugador 1 ó 2 y a ninguno si es 0.
+/*
+ Array de objetos. Cada objeto representa una casilla del tablero y tiene las siguinetes propiedades.
+ Ocupado: es un booleano que sirve para saber si la casilla esta ocupada o no por una ficha.
+ Nombre: String que identifica el objeto con la etiqueta html. 
+ Jugador: number que se utiliza para asociar la casilla a u jugador 1 ó 2 y a ninguno si es 0.
+ */
 var tabla1 = [
     {
         ocupado: false,
