@@ -218,14 +218,28 @@ var tabla1 = [
 
 ];
 
+
+let getCookie = name => {
+    let nameEQ = name + "=";
+    let ca = document.cookie.split(";");
+    for (var i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) === " ") c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  };
+
 // Objeto jugador con um number que ejerce de identificador y un booleano para definir su estado en el juego.
 var jugador1 = {
     id: 1,
+    name: getCookie("usuario1"),
     activo: true
 }
 
 var jugador2 = {
     id: 2,
+    name: getCookie("usuario2"),
     activo: false
 }
 
@@ -347,7 +361,7 @@ var mensaje = '';
 
 // Variable number que especifica el jugador que está activo.
 var jugador = 1;
-document.getElementById('jugadorNum').innerHTML = jugador;
+document.getElementById('jugadorNum').innerHTML = jugador1.name;
 
 // Array que almacena las jugadas del juagador 1.
 var ocupadasJugador1 = [];
@@ -407,12 +421,15 @@ function buscarganadores(tira) {
 
 // Función que cambia el juagador en activo.
 function jugadorNum() {
+    console.log('En jugadorNum; ' + jugador1.name);
     if (jugador == 2) {
         jugador = 1;
+        var user = jugador1.name;
     } else {
         jugador = 2
+        var user = jugador2.name;
     }
-    document.getElementById('jugadorNum').innerHTML = jugador;
+     document.getElementById('jugadorNum').innerHTML = user;
 }
 
 /* Función que recibe como argumento un número de columna, revisa las casillas de la columna para ver la última 
@@ -574,4 +591,9 @@ function tirada(tar) {
     }
     jugadorNum();
     buscarganadores(tirada);
+}
+
+// Funciçon que redirige a la página inicial, donde empezar de nuevo.
+function nuevaPartida(){
+    window.open("index.html");
 }

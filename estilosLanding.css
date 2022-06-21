@@ -1,0 +1,61 @@
+body{
+    background-color: black;
+    color: white;
+}
+.titulo{
+    font-size: 5em;
+    text-align: center;
+    margin-top: 10%;
+}
+.contenido{
+    width: 70%;
+    height: 300px;
+    border: 1px solid red;
+    margin: auto;
+    text-align: center;
+}
+.btn{
+    margin: auto;
+    margin-top: 5%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1em;
+}
+.btnGuardar{
+    position: absolute;
+    top: 60%;
+    margin-left: 40%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.usuario1{
+    position: absolute;
+    display: none;
+    margin-top: 50px;
+    left: 20%;
+    right: auto;
+    width: 60%;
+    height: 100px;
+}
+ label{
+    margin-left: 28%;
+    font-size: 1.5em;
+}
+ input{
+    height: 20px;
+    margin-left: 30px;
+}
+.usuario2{
+    position: absolute;
+    display: none;
+    margin-top: 50px;
+    left: 20%;
+    right: auto;
+    width: 60%;
+    height: 100px;
+}

@@ -81,7 +81,7 @@ p{
     margin-bottom: 50px;
     margin-right: auto;
     margin-left: auto;
-    width: 100px;
+    width: 40%;
     height: 50px;
     border: 1px solid red;
     font-size: 2.5em;
@@ -91,7 +91,7 @@ p{
     display: none;
     top: 700px;
     margin-bottom: 50px;
-    right: 34%;
+    right: 27%;
     margin: auto;
     width: 700px;
     height: 200px;
@@ -101,7 +101,18 @@ p{
     color: azure;
     font-size: 2.5em;
 }
-
+button{
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:aqua ;
+    border-radius: 10px;
+    border: 2px solid blueviolet;
+}
 
 #caja{
     width: 100px;
